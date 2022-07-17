@@ -10,13 +10,13 @@ import java.util.Map;
 import static java.time.temporal.ChronoUnit.*;
 
 /**
- * A dictionary for {@link java.time.temporal.ChronoUnit} human readable names.<br/>
+ * A dictionary for {@link java.time.temporal.ChronoUnit} human readable names.<br>
  * Mutable to allow expansion with custom {@link TemporalUnit}s,
- * though I have never seen one.<br/>
- * <br/>
+ * though I have never seen one.<br>
+ * <br>
  * Also, this project was never intended to tackle different locales,
- * just to print good enough string for API messages or logs.<br/>
- * <br/>
+ * just to print good enough string for API messages or logs.<br>
+ * <br>
  * Also strings are hardcoded for a little bit faster startup time.
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
@@ -68,7 +68,7 @@ public class ChronoUnitTextRepresentation {
     }
 
     /**
-     * Register a custom {@link TemporalUnit}.<br/>
+     * Register a custom {@link TemporalUnit}.<br>
      * Also, send me a message on GitHub why did you need to do it, I'm geniunely curious.
      * @param unit to be registered
      * @param singular representation of said unit

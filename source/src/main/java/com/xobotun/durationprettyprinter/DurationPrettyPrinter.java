@@ -16,18 +16,18 @@ import static com.xobotun.durationprettyprinter.DurationDivisor.modulo;
 
 
 /**
- * {@link Duration} pretty printer. Supports three default modes:<br/>
- *  • P12Y4MT10H30.999000777S → 12 years 4 months 10 hours<br/>
- *  • P12Y4MT10H30.999000777S → 12 years 4 months 10 hours 1 second 999 milliseconds 777 nanoseconds<br/>
- *  • P12Y4MT10H1.999000777S → 12 years 4 months 0 days 10 hours 0 minutes 1 second 999 milliseconds 0 microseconds 777 nanoseconds<br/>
+ * {@link Duration} pretty printer. Supports three default modes:<br>
+ *  • P12Y4MT10H30.999000777S → 12 years 4 months 10 hours<br>
+ *  • P12Y4MT10H30.999000777S → 12 years 4 months 10 hours 1 second 999 milliseconds 777 nanoseconds<br>
+ *  • P12Y4MT10H1.999000777S → 12 years 4 months 0 days 10 hours 0 minutes 1 second 999 milliseconds 0 microseconds 777 nanoseconds<br>
  * And a configurable you can choose the specifics yourself.
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class DurationPrettyPrinter {
     /**
      * Arbitrary chosen {@link ChronoUnit}s I thought are generally encountered
-     * in the majority of software.<br/>
-     * <br/>
+     * in the majority of software.<br>
+     * <br>
      * In other words, they won't fit any task perfectly. Only "good enough".
      */
     static final ChronoUnit[] DEFAULT_TEMPORAL_BITS = {
@@ -98,7 +98,7 @@ public class DurationPrettyPrinter {
     ///
 
     /**
-     * The core function to form the human-readable duration string.<br/>
+     * The core function to form the human-readable duration string.<br>
      * @param duration to be stringified
      * @param units to be printed out. Must be listed in a descending order, like years → seconds
      * @param shortenUpTo how many significant chrono units to print, starting from the largest one. Null to print all
