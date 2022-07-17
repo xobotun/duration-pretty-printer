@@ -31,6 +31,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -63,6 +64,7 @@
         How to release:
         // -B is for non-interactive mode to agree with all default.
         • mvn release:clean -B release:prepare
+        • manually push new commit to GitHub
         • mvn release:perform
         See more at https://central.sonatype.org/publish/publish-maven/#performing-a-release-deployment
         -->
@@ -126,6 +128,9 @@
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <useReleaseProfile>false</useReleaseProfile>
                     <releaseProfiles>release</releaseProfiles>
+                    <pushChanges>false</pushChanges>
+                    <localCheckout>true</localCheckout>
+                    <dryRun>false</dryRun>
                     <goals>deploy</goals>
                 </configuration>
             </plugin>
