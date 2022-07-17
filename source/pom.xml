@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xobotun</groupId>
     <artifactId>duration-pretty-printer</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>Duration Pretty Printer</name>
     <description>A small library intended to substitute java.time.Duration ISO8601-compliant toString() to a more human-readable string.</description>
     <url>https://github.com/xobotun/duration-pretty-printer</url>
@@ -26,7 +24,8 @@
         <connection>scm:git:git://github.com/xobotun/duration-pretty-printer.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:xobotun/duration-pretty-printer.git</developerConnection>
         <url>http://github.com/xobotun/duration-pretty-printer/tree/master</url>
-    </scm>
+      <tag>duration-pretty-printer-1.0.0</tag>
+  </scm>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
